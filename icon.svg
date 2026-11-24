@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="38%" r="75%">
+      <stop offset="0" stop-color="#5a0010"/>
+      <stop offset="0.5" stop-color="#1a0006"/>
+      <stop offset="1" stop-color="#000"/>
+    </radialGradient>
+    <linearGradient id="coin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff7b8"/><stop offset=".45" stop-color="#ffcc33"/><stop offset="1" stop-color="#c98a00"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1024" height="1024" rx="120" fill="url(#bg)"/>
+  <rect x="22" y="22" width="980" height="980" rx="100" fill="none" stroke="#c8102e" stroke-width="14"/>
+
+  <!-- choice wheel: 10 segments -->
+  <g transform="translate(512 430)">
+    <circle r="300" fill="#0b0b0d" stroke="#c8102e" stroke-width="10"/>
+    <g stroke="#c8102e" stroke-width="6">
+      <line x1="0" y1="-300" x2="0" y2="-120" transform="rotate(18)"/>
+      <line x1="0" y1="-300" x2="0" y2="-120" transform="rotate(54)"/>
+      <line x1="0" y1="-300" x2="0" y2="-120" transform="rotate(90)"/>
+      <line x1="0" y1="-300" x2="0" y2="-120" transform="rotate(126)"/>
+      <line x1="0" y1="-300" x2="0" y2="-120" transform="rotate(162)"/>
+      <line x1="0" y1="-300" x2="0" y2="-120" transform="rotate(198)"/>
+      <line x1="0" y1="-300" x2="0" y2="-120" transform="rotate(234)"/>
+      <line x1="0" y1="-300" x2="0" y2="-120" transform="rotate(270)"/>
+      <line x1="0" y1="-300" x2="0" y2="-120" transform="rotate(306)"/>
+      <line x1="0" y1="-300" x2="0" y2="-120" transform="rotate(342)"/>
+    </g>
+    <!-- highlighted top segment -->
+    <path d="M -92.7 -285.3 A 300 300 0 0 1 92.7 -285.3 L 37.1 -114.1 A 120 120 0 0 0 -37.1 -114.1 Z" fill="#c8102e" stroke="#fff" stroke-width="6"/>
+    <text x="0" y="-205" text-anchor="middle" font-family="Arial Black,Arial,sans-serif" font-weight="900" font-size="34" fill="#fff">SLUTA!</text>
+    <!-- small speech bubbles in segments -->
+    <g fill="#2a2a2e">
+      <rect x="150" y="-130" width="80" height="44" rx="14" transform="rotate(10)"/>
+      <rect x="-230" y="-130" width="80" height="44" rx="14" transform="rotate(-10)"/>
+      <rect x="160" y="60" width="80" height="44" rx="14"/>
+      <rect x="-240" y="60" width="80" height="44" rx="14"/>
+    </g>
+    <circle r="120" fill="#000" stroke="#c8102e" stroke-width="8"/>
+
+    <!-- stop hand in the centre -->
+    <g transform="translate(0 8)" fill="#fff">
+      <rect x="-50" y="-18" width="100" height="90" rx="38"/>
+      <rect x="-50" y="-82" width="22" height="96" rx="11"/>
+      <rect x="-23" y="-98" width="22" height="110" rx="11"/>
+      <rect x="4" y="-94" width="22" height="106" rx="11"/>
+      <rect x="31" y="-78" width="21" height="92" rx="10.5"/>
+      <rect x="-74" y="-4" width="26" height="70" rx="13" transform="rotate(-38 -61 31)"/>
+    </g>
+  </g>
+
+  <!-- coin -->
+  <g transform="translate(806 196)">
+    <circle r="62" fill="url(#coin)" stroke="#7a5200" stroke-width="8"/>
+    <text y="24" text-anchor="middle" font-family="Arial Black,Arial,sans-serif" font-weight="900" font-size="66" fill="#7a5200">C</text>
+  </g>
+  <text x="806" y="296" text-anchor="middle" font-family="Arial Black,Arial,sans-serif" font-weight="900" font-size="44" fill="#ffd23f" stroke="#000" stroke-width="8" paint-order="stroke">+10</text>
+
+  <!-- title -->
+  <g font-family="Arial Black,Impact,Arial,sans-serif" font-weight="900" text-anchor="middle">
+    <text x="518" y="852" font-size="118" fill="#c8102e">ANTI MOBBAR</text>
+    <text x="512" y="846" font-size="118" fill="#fff">ANTI MOBBAR</text>
+    <rect x="352" y="880" width="320" height="76" rx="14" fill="#c8102e"/>
+    <text x="512" y="938" font-size="62" fill="#fff" letter-spacing="10">SPEL</text>
+  </g>
+</svg>

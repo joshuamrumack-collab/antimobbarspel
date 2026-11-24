@@ -1,0 +1,30 @@
+; Anti mobbar spel – Godot 4 project
+; Skapat av DorkTeach
+
+config_version=5
+
+[application]
+
+config/name="Anti mobbar spel"
+config/description="Olweus-spel om att stoppa bråk i skolan. Skapat av DorkTeach."
+run/main_scene="res://scenes/Main.tscn"
+config/features=PackedStringArray("4.3", "GL Compatibility")
+config/icon="res://icon.svg"
+
+[autoload]
+
+GS="*res://scripts/gs.gd"
+Data="*res://scripts/data.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)

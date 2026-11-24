@@ -1,0 +1,68 @@
+[gd_scene load_steps=14 format=3]
+
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_main"]
+[ext_resource type="Script" path="res://scripts/school_map.gd" id="2_map"]
+[ext_resource type="Script" path="res://scripts/overlay.gd" id="3_overlay"]
+[ext_resource type="Script" path="res://scripts/conflict_manager.gd" id="4_cm"]
+[ext_resource type="Script" path="res://scripts/schedule.gd" id="5_sched"]
+[ext_resource type="Script" path="res://scripts/ui/hud.gd" id="6_hud"]
+[ext_resource type="Script" path="res://scripts/ui/choice_wheel.gd" id="7_wheel"]
+[ext_resource type="Script" path="res://scripts/ui/dialog_panel.gd" id="8_dialog"]
+[ext_resource type="Script" path="res://scripts/ui/quiz_panel.gd" id="9_quiz"]
+[ext_resource type="Script" path="res://scripts/ui/shop_panel.gd" id="10_shop"]
+[ext_resource type="Script" path="res://scripts/ui/phone_panel.gd" id="11_phone"]
+[ext_resource type="Script" path="res://scripts/ui/help_panel.gd" id="12_help"]
+[ext_resource type="Script" path="res://scripts/ui/start_screen.gd" id="13_start"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_main")
+
+[node name="World" type="Node2D" parent="."]
+
+[node name="SchoolMap" type="Node2D" parent="World"]
+script = ExtResource("2_map")
+
+[node name="Actors" type="Node2D" parent="World"]
+y_sort_enabled = true
+
+[node name="Overlay" type="Node2D" parent="World"]
+z_index = 100
+script = ExtResource("3_overlay")
+
+[node name="ConflictManager" type="Node" parent="."]
+script = ExtResource("4_cm")
+
+[node name="Schedule" type="Node" parent="."]
+script = ExtResource("5_sched")
+
+[node name="HUD" type="CanvasLayer" parent="."]
+layer = 5
+script = ExtResource("6_hud")
+
+[node name="PhonePanel" type="CanvasLayer" parent="."]
+layer = 15
+script = ExtResource("11_phone")
+
+[node name="ChoiceWheel" type="CanvasLayer" parent="."]
+layer = 10
+script = ExtResource("7_wheel")
+
+[node name="DialogPanel" type="CanvasLayer" parent="."]
+layer = 20
+script = ExtResource("8_dialog")
+
+[node name="QuizPanel" type="CanvasLayer" parent="."]
+layer = 21
+script = ExtResource("9_quiz")
+
+[node name="ShopPanel" type="CanvasLayer" parent="."]
+layer = 22
+script = ExtResource("10_shop")
+
+[node name="HelpPanel" type="CanvasLayer" parent="."]
+layer = 23
+script = ExtResource("12_help")
+
+[node name="StartScreen" type="CanvasLayer" parent="."]
+layer = 30
+script = ExtResource("13_start")
